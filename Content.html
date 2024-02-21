@@ -1,0 +1,91 @@
+
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+
+	<script src="./js/jquery.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/vue.js"> </script>
+	<script src="./js/SiteContent.js"> </script>
+	<script src="./js/common.js"> </script>
+
+	<style>
+		@media only screen and (max-width: 768px) {
+			.hide-sm {display:none;}
+		}
+
+		@media only screen and (min-width: 768px) {
+			.hide-md {display:none}
+		}
+		
+		.libre-baskerville-regular {
+		font-family: "Libre Baskerville", serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 75%;
+	  }
+	  
+	  .libre-baskerville-bold {
+		font-family: "Libre Baskerville", serif;
+		font-weight: 900;
+		font-style: normal;
+	  }
+	  
+	  .libre-baskerville-regular-italic {
+		font-family: "Libre Baskerville", serif;
+		font-weight: 400;
+		font-style: italic;
+	  }
+	</style>
+
+
+	<script>	
+		var vue ;
+	$(function () {
+		pageContent = getPageContent("Content")
+		vue = new Vue ( {
+			el: "#app",
+			data : pageContent 
+		}) ;
+	});
+	
+	</script>
+</head>
+<body>
+	<div id="app"> 
+		<div class="row m-2"> 
+			<custom-menu class="hide-md" page-id="Content"></custom-menu> 
+		</div>
+		<!-- <nav class="navbar navbar-light bg-light hide-sm">
+			<div class="flex-grow-1 text-center"> 
+					<a class="navbar-brand">  .... Omkar Branding   .... </a>
+			</div>
+		</nav> -->
+		<div class="row m-2">
+			<custom-navbar page-id="Content"></custom-navbar>
+			<div class="col-sm-12 col-md-9" style="padding-top:20px">
+				<!-- <div class="m-2 row">
+					<h3 class="text-primary"> <div v-html="Header"></div> </h3>
+				</div> -->
+				<div class="m-2 row libre-baskerville-regular">
+					<div v-html="Body"></div>
+				</div>
+				<!-- <div class="m-2 row">
+					<div class="text-secondary" v-html="Footer"></div>
+				</div> -->
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+
+
