@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<link rel="stylesheet" href="./css/bootstrap.min.css" />
+	<link rel="stylesheet" href= "css/app.css" />
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,66 +16,6 @@
 	<script src="./js/vue.js"> </script>
 	<script src="./js/common.js"> </script>
 	<script src="./js/SiteContent.js"> </script>
-
-	<style>
-		@media only screen and (max-width: 768px) {
-			.hide-sm {display:none;}
-		}
-
-		@media only screen and (min-width: 768px) {
-			.hide-md {display:none}
-		}
-
-		.league-spartan-bold {
-			font-family: "League Spartan", sans-serif;
-			font-optical-sizing: auto;
-			font-weight: 600;
-			font-size: 60;
-			font-style: normal;
-			padding-top: 20;
-			padding-bottom: 20;
-		}
-		
-		.league-spartan-sm-bold {
-			font-family: "League Spartan", sans-serif;
-			font-optical-sizing: auto;
-			font-weight: 600;
-			font-size: 30;
-			font-style: normal;
-			padding-top: 20;
-			padding-bottom: 20;
-		}
-
-		.libre-baskerville-regular {
-			font-family: "Libre Baskerville", serif;
-			font-weight: 400;
-			font-style: normal;
-		}
-
-		.libre-baskerville-regular-sm {
-			font-family: "Libre Baskerville", serif;
-			font-weight: 400;
-			font-style: normal;
-			font-size: 75%;
-		}
-
-		.libre-baskerville-bold {
-			font-family: "Libre Baskerville", serif;
-			font-weight: 700;
-			font-style: normal;
-		}
-
-		.libre-baskerville-regular-italic {
-			font-family: "Libre Baskerville", serif;
-			font-weight: 400;
-			font-style: italic;
-		}
-		a {
-			color: #929498;
-			background-color: transparent;
-			text-decoration: none;
-		}
-	</style>
 	
 	<script>	
 		var vue ;
@@ -96,11 +37,6 @@
 		<div class="row m-2">
 			<custom-menu class="hide-md hide-lg" page-id="Home"></custom-menu>
 		</div>
-		<!-- <nav class="navbar navbar-light bg-light hide-sm"> -->
-			<!-- <div class="flex-grow-1 text-center"> 
-					<a class="navbar-brand">  .... Omkar Branding   .... </a>
-			</div> -->
-		<!-- </nav> -->
 		<div class="row m-2">
 			<custom-navbar page-id="Home"></custom-navbar>
 			<div class="col-8">
@@ -110,32 +46,27 @@
 				</div>
 				
 				<div class="row">
-					<div id="carouselExample" class="carousel slide hide-md hide-lg">
-						<div class="carousel-indicators">
-							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
-						  </div>
-						  <div class="carousel-inner">
+					<div id="carouselExampleControls" class="carousel slide hide-md hide-lg" data-ride="carousel">
+						<div class="carousel-inner">
 						  <div class="carousel-item active">
-							<img src="content/image1.JPG" class="d-block w-100" alt="Image 1">
+							<img class="d-block w-100" src="content/image1.JPG" alt="First image">
 						  </div>
 						  <div class="carousel-item">
-							<img src="content/image3.JPG" class="d-block w-100" alt="Image 2">
+							<img class="d-block w-100" src="content/image3.JPG" alt="Second image">
 						  </div>
 						  <div class="carousel-item">
-							<img src="content/image2.JPG" class="d-block w-100" alt="Image 3">
+							<img class="d-block w-100" src="content/image2.JPG" alt="Third image">
 						  </div>
 						</div>
-						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+						<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 						  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						  <span class="visually-hidden">Previous</span>
-						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+						  <span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
 						  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-						  <span class="visually-hidden">Next</span>
-						</button>
-					</div>
+						  <span class="sr-only">Next</span>
+						</a>
+					  </div>
 					<div class="col-xs col-md-4 hide-sm"> <img src="content/image1.JPG" width="100%"/> </div>
 					<div class="col-xs col-md-4 hide-sm"> <img src="content/image3.JPG" width="100%"/> </div>
 					<div class="col-xs col-md-4 hide-sm"> <img src="content/image2.JPG" width="100%"/> </div>
