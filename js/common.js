@@ -8,16 +8,16 @@ Vue.component ('custom-menu', {
 			
 			<ul id="RegLinks" class="dropdown-menu libre-baskerville-regular-sm">
 				<li v-if= "pageId != 'Index'" id="'linkIndex" class="ml-auto"> 
-					<a class="nav-item nav-link" onClick="gotoPage('Index')" href='#'> Home </a>  
+					<a class="nav-item nav-link" onClick="gotoPage('index')" href='#'> Home </a>  
 				</li>
 				<li v-else> 
 					<a class="nav-item nav-link"> Home </a>   
 				</li>
 
-				<li v-if= "pageId != 'About' "id="linkAbout" class="ml-auto"> <a class="nav-item nav-link" onclick="gotoPage('About')" href='#'> About </a>  </li>
+				<li v-if= "pageId != 'About' "id="linkAbout" class="ml-auto"> <a class="nav-item nav-link" onclick="gotoPage('about')" href='#'> About </a>  </li>
 				<li v-else id="linkAbout"> <a class="nav-item nav-link" > About </a>  </li>
 
-				<li v-if= "pageId != 'Content'" id="linkPag2" class="ml-auto"> <a class="nav-item nav-link" onclick="gotoPage('Content')" href='#'> Content </a>  </li>
+				<li v-if= "pageId != 'Content'" id="linkPag2" class="ml-auto"> <a class="nav-item nav-link" onclick="gotoPage('content')" href='#'> Content </a>  </li>
 				<li v-else id="linkPag2"> <a class="nav-item nav-link" > Content </a>  </li>
 			</ul>
 		</nav>	
