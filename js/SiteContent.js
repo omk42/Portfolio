@@ -39,6 +39,10 @@ var SiteContent  = {
 						Independent Research on "Adaptive/Automated Watering System Prototyping" in 2017/18 with <a href= "https://sites.uci.edu/orange/quoc-viet-dang-contact/service-mentoring/">Professor Quoc Viet Dang</a>
 					</li>
 				</p>
+
+				<p> 
+					If you would like to connect, you can find me on <a href="https://www.linkedin.com/in/omkar-pathak/" > LinkedIn </a> 
+				</p> 
 				`,
 				"Footer" : `Footer text  for page 1`
 	},

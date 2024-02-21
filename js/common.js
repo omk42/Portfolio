@@ -6,9 +6,13 @@ Vue.component ('custom-menu', {
 		<nav class="navbar navbar-light libre-baskerville-regular">
 			<a class="mr-auto" data-toggle="dropdown" href="#"><span class="navbar-toggler-icon "></span> </a>
 			
-			<ul id="RegLinks" class="dropdown-menu">
-				<li v-if= "pageId != 'Index'" id="'linkIndex" class="ml-auto"> <a class="nav-item nav-link" onClick="gotoPage('Index')" href='#'> Home </a>  </li>
-				<li v-else> <a class="nav-item nav-link"  > Home </a>   </li>
+			<ul id="RegLinks" class="dropdown-menu libre-baskerville-regular-sm">
+				<li v-if= "pageId != 'Index'" id="'linkIndex" class="ml-auto"> 
+					<a class="nav-item nav-link" onClick="gotoPage('Index')" href='#'> Home </a>  
+				</li>
+				<li v-else> 
+					<a class="nav-item nav-link"> Home </a>   
+				</li>
 
 				<li v-if= "pageId != 'About' "id="linkAbout" class="ml-auto"> <a class="nav-item nav-link" onclick="gotoPage('About')" href='#'> About </a>  </li>
 				<li v-else id="linkAbout"> <a class="nav-item nav-link" > About </a>  </li>
