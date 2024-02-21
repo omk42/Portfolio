@@ -30,13 +30,13 @@ Vue.component ('custom-navbar', {
 	template: `
 			<div class="col-2 libre-baskerville-regular">
 				<div class="hide-sm" style="padding-top:20px">
-					<div v-if= "pageId != 'Index'" id="'linkIndex" class="ml-auto"> <a class="nav-item nav-link" onClick="gotoPage('Index')" href='#'> Home </a>  </div>
+					<div v-if= "pageId != 'Index'" id="'linkIndex" class="ml-auto"> <a class="nav-item nav-link" onClick="gotoPage('index')" href='#'> Home </a>  </div>
 					<div v-else class="ml-auto"> <a class="nav-item nav-link"  > Home </a>   </div>
 
-					<div v-if= "pageId != 'About' "id="linkAbout" class="ml-auto"> <a class="nav-item nav-link" onclick="gotoPage('About')" href='#'> About </a>  </div>
+					<div v-if= "pageId != 'About' "id="linkAbout" class="ml-auto"> <a class="nav-item nav-link" onclick="gotoPage('about')" href='#'> About </a>  </div>
 					<div v-else id="linkAbout" class="ml-auto"> <a class="nav-item nav-link" > About </a>  </div>
 
-					<div v-if= "pageId != 'Content'" id="linkPag2" class="ml-auto"> <a class="nav-item nav-link" onclick="gotoPage('Content')" href='#'> Content </a>  </div>
+					<div v-if= "pageId != 'Content'" id="linkPag2" class="ml-auto"> <a class="nav-item nav-link" onclick="gotoPage('content')" href='#'> Content </a>  </div>
 					<div v-else id="linkPag2" class="ml-auto"> <a class="nav-item nav-link" > Content </a>  </div>
 				</div>
 			</div>
