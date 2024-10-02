@@ -41,7 +41,7 @@ var SiteContent  = {
 		</p>
 
 		<p> 
-			If you would like to connect, you can find me on <a href="https://www.linkedin.com/in/omkar-pathak/" > LinkedIn </a> 
+			If you would like to connect, you can find him on <a href="https://www.linkedin.com/in/omkar-pathak/" > LinkedIn </a>. His resume can be downloaded <a href="content/resume.pdf"> here </a>.
 		</p> 
 		`
 	},
